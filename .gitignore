@@ -1,0 +1,47 @@
+# STM32CubeIDE
+Debug/
+Release/
+
+# Build artifacts
+*.o
+*.d
+*.su
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+
+# STM32CubeIDE metadata
+.settings/
+.project
+.cproject
+
+# Eclipse files
+.metadata/
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# CMake
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Coverage / profiling
+*.gcda
+*.gcno
+*.gcov
