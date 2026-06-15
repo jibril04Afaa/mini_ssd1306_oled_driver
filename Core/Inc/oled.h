@@ -2,9 +2,9 @@
 #define OLED_H
 
 // optimized for stm32f411xe boards
-#include "stm32f411xe.h"
+#include "main.h"
 
-#define OLED_I2C_ADDR (0x3C << 1)
+#define OLED_I2C_ADDR (0x3C << 1) // address shift
 
 // define functions
 void OLED_Init(I2C_HandleTypeDef* hi2c);
