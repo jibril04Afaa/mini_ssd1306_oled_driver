@@ -22,6 +22,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "oled.h"
+#include "starfield.h"
 
 /* USER CODE END Includes */
 
@@ -96,12 +97,13 @@ int main(void)
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
   OLED_Init(&hi2c1);
+  Starfield_Run(&hi2c1);
 
   // test with a line
-  for(size_t i=0; i<64; i++)
-  {
-	  OLED_DrawPixel(i, i, 1);
-  }
+//  for(size_t i=0; i<64; i++)
+//  {
+//	  OLED_DrawPixel(i, i, 2);
+//  }
 
   // push buffer to display hardware
   OLED_UpdateScreen(&hi2c1);
